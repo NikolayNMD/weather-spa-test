@@ -20,3 +20,16 @@ export interface HourlyForecast {
     temperature: number;
     icon?: string;
 }
+
+export interface WeatherState {
+    cities: City[];
+    weatherData: Record<string, WeatherData>;
+    hourlyForecasts: Record<string, HourlyForecast[]>;
+    loading: boolean;
+    error: string | null;
+}
+
+export interface WeatherErrorResponse {
+    message: string;
+    code: number;
+}
