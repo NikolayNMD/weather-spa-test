@@ -61,6 +61,8 @@ describe('CityCard', () => {
         renderCityCard();
         const card = screen.getByText('Lviv');
         fireEvent.click(card);
-        expect(window.location.pathname).toBe(`/city/${mockCity.id}`);
+        expect(window.location.pathname).toBe(
+            `/weather-spa-test/city/${mockCity.id}`
+        );
     });
 });
