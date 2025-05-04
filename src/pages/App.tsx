@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import WeatherHomePage from './WeatherHomePage/WeatherHomePage';
-// import CityDetailPage from './CityDetailPage';
+import CityDetailPage from './CityDetailPage/CityDetailPage';
 
 const App: React.FC = () => {
     return (
         <Router>
-            <div className="app-container">
+            <div>
                 <Routes>
                     <Route path="/" element={<WeatherHomePage />} />
-                    {/* <Route path="/city/:cityId" element={<CityDetailPage />} /> */}
+                    <Route path="/city/:cityId" element={<CityDetailPage />} />
                 </Routes>
             </div>
         </Router>
