@@ -1,5 +1,6 @@
 {
     "name": "weather-spa-test",
+    "homepage": "https://NikolayNMD.github.io/weather-spa-test/",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -8,11 +9,14 @@
         "build": "tsc -b && vite build",
         "lint": "eslint .",
         "preview": "vite preview",
-        "test": "jest"
+        "test": "jest",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "@reduxjs/toolkit": "^2.7.0",
         "axios": "^1.9.0",
+        "gh-pages": "^6.3.0",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "react-redux": "^9.2.0",
