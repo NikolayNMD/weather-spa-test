@@ -21,7 +21,7 @@ const CityCard: React.FC<CityCardProps> = ({
     if (!weatherData) return null;
 
     const handleCardClick = () => {
-        navigate(`/city/${city.id}`);
+        navigate(`/weather-spa-test/city/${city.id}`);
     };
 
     return (

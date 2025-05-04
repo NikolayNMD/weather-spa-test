@@ -8,8 +8,14 @@ const App: React.FC = () => {
         <Router>
             <div>
                 <Routes>
-                    <Route path="/" element={<WeatherHomePage />} />
-                    <Route path="/city/:cityId" element={<CityDetailPage />} />
+                    <Route
+                        path="/weather-spa-test"
+                        element={<WeatherHomePage />}
+                    />
+                    <Route
+                        path="/weather-spa-test/city/:cityId"
+                        element={<CityDetailPage />}
+                    />
                 </Routes>
             </div>
         </Router>
