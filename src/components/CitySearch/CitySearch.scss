@@ -1,0 +1,32 @@
+.city_search_form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    input {
+        padding: 10px;
+        font-size: 16px;
+        margin-right: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #458efb;
+        color: #ffffff;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #104ca6;
+        }
+
+        &:active {
+            background-color: #255fc0;
+        }
+    }
+}

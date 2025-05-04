@@ -17,7 +17,6 @@ class WeatherApiClass {
                     q: cityName,
                     appid: API_KEY,
                     units: 'metric',
-                    lang: 'ua',
                 },
             });
 
@@ -44,7 +43,6 @@ class WeatherApiClass {
                     id: cityId,
                     appid: API_KEY,
                     units: 'metric',
-                    lang: 'ua',
                 },
             });
 
@@ -74,7 +72,6 @@ class WeatherApiClass {
                     q: cityName,
                     appid: API_KEY,
                     units: 'metric',
-                    lang: 'ua',
                 },
             });
 
@@ -100,7 +97,6 @@ class WeatherApiClass {
                     id: cityId,
                     appid: API_KEY,
                     units: 'metric',
-                    lang: 'ua',
                 },
             });
 

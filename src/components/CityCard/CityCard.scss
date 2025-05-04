@@ -1,0 +1,94 @@
+.city_card {
+    position: relative;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    &__header {
+        align-items: center;
+        margin-bottom: 15px;
+        > h2 {
+            font-family: 'Merienda', cursive;
+        }
+    }
+
+    &__actions {
+        top: 10px;
+        right: 10px;
+        position: absolute;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__button {
+        padding: 8px;
+        line-height: 0.7;
+        font-size: 20px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        color: #ffffff;
+
+        &--refresh {
+            background-color: #458efb;
+            font-weight: bold;
+
+            &:hover {
+                background-color: #104ca6;
+            }
+
+            &:active {
+                background-color: #255fc0;
+            }
+        }
+
+        &--remove {
+            background-color: #c52311;
+            font-size: 25px;
+            line-height: 0.5;
+
+            &:hover {
+                background-color: red;
+            }
+
+            &:active {
+                background-color: red;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.modal_content {
+    margin-top: 20px;
+
+    > p {
+        margin: 5px 0;
+    }
+
+    .forecast_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+        border-bottom: 1px solid #e0e0e0;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
