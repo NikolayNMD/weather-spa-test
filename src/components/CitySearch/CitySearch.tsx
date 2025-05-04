@@ -24,7 +24,9 @@ const CitySearch: React.FC<CitySearchProps> = ({ onAddCity }) => {
                 onChange={(e) => setCityName(e.target.value)}
                 placeholder="City name"
             />
-            <button type="submit">Search &#x1F50E;&#xFE0E;</button>
+            <button type="submit" aria-label="Search">
+                Search &#x1F50E;&#xFE0E;
+            </button>
         </form>
     );
 };

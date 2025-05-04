@@ -44,6 +44,8 @@ const TemperatureChart: React.FC<TemperatureChartProps> = ({ data }) => {
                         type="monotone"
                         dataKey="temperature"
                         stroke="#c52311"
+                        activeDot={{ r: 6 }}
+                        dot={{ r: 3 }}
                     />
                 </LineChart>
             </ResponsiveContainer>
